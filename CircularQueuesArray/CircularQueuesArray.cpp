@@ -16,3 +16,14 @@ public:
 		cin >> num;
 		cout << endl;
 
+		//cek apakah
+		if ((FRONT == 0 && REAR + 1)) {
+			cout << "\nQueue overflow\n";
+			return;
+		}
+
+		//cek apakah antrian koosong
+		if (FRONT == -1) {
+			FRONT = 0;
+			REAR = 0;
+		}
