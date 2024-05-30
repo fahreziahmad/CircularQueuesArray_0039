@@ -36,49 +36,70 @@ public:
 		}
 		queue_array[REAR] = num;
 	}
-};
-void remove() {
-	//cek
-	if (FRONT == -1) {
-		cout << "Queue underflow\n";
-		return;
-	}
-	cout << "\nThe element deleted from the queue is: " << queue_array[FRONT] << "\n";
-
-	//cek jika
-	if (FRONT == REAR) {
-		FRONT = -1;
-		REAR = -1;
-	}
-	else {
-		//jika elemen
-		if (FRONT == max - 1)
-			FRONT = 0;
-		else
-			FRONT = FRONT + 1;
-	}
-	
-}
-
-void display() {
-	int FRONT_position = FRONT;
-	int REAR_position = REAR;
-
-	//cekk apakah antrian kosong
-	if (FRONT == -1) {
-		cout << "Queue is empety\n";
-		return;
-	}
-
-	cout << "\nElements in the queue are...\n";
-
-	//jika front
-	if (FRONT_position, = REAR_position) {
-		while (FRONT_position <= REAR_position) {
-			cout << queue_array[FRONT_position] << "  ";
-			FRONT_position++;
+	void remove() {
+		//cek
+		if (FRONT == -1) {
+			cout << "Queue underflow\n";
+			return;
 		}
-		cout << endl;
+		cout << "\nThe element deleted from the queue is: " << queue_array[FRONT] << "\n";
+
+		//cek jika
+		if (FRONT == REAR) {
+			FRONT = -1;
+			REAR = -1;
+		}
+		else {
+			//jika elemen
+			if (FRONT == max - 1)
+				FRONT = 0;
+			else
+				FRONT = FRONT + 1;
+		}
+
+		void display() {
+			int FRONT_position = FRONT;
+			int REAR_position = REAR;
+
+			//cekk apakah antrian kosong
+			if (FRONT == -1) {
+				cout << "Queue is empety\n";
+				return;
+			}
+
+			cout << "\nElements in the queue are...\n";
+
+			//jika front
+			if (FRONT_position, = REAR_position) {
+				while (FRONT_position <= REAR_position) {
+					cout << queue_array[FRONT_position] << "  ";
+					FRONT_position++;
+				}
+				cout << endl;
+			}
+			else {
+				//
+				while (FRONT_position <= max - 1) {
+					cout << queue_array[FRONT_position] << "  ";
+					FRONT_positiion++;
+				}
+
+			}
+
+		}
+	};
+
+int main() {
+	queues q;
+	char ch;
+
+	while (true) {
+		try {
+			cout << "Menu" << endl;
+			cout << "1. Implement insert operation" << endl;
+			cout << "2. Implement insert operation" << endl;
+			cout << "3. Display values" << endl;
+			cout << "4. Exit your choice (1-4)" << endl; 
 	}
-}
+
 
