@@ -2,36 +2,11 @@
 using namespace std;
 
 class Queues {
-	int Front, REAR, max = 5;
+	int FRONT, REAR, max = 5;
 	int queue_array[5];
-};
 
 public:
 	Queues() {
-		FRONT = - 1;
+		FRONT = -1;
 		REAR = -1;
 	}
-
-	void insert() {
-		int num;
-		cout << "Enter a number: ";
-		cin >> num;
-		cout << endl;
-
-		//cek apakah
-		if ((FROTN == && REAR + 1)) {
-			cout << "\nQueue overflow\n";
-			return;
-		}
-
-		//cek apakah antrian koosong
-		if (FRONT == -1) {
-			FRONT = 0;
-			REAR = 0;
-		}
-		else {
-			//jika REAR berada di posisi terakhir array, kembali ke awal array
-			iff (REAR == max -)
-		}
-	}
-
